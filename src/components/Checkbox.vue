@@ -25,7 +25,7 @@ const value = defineModel<boolean>({ required: true });
     background-color: var(--color-green-200);
     background-image: url("/images/icon-check.svg");
     background-repeat: no-repeat;
-    background-position: center bottom 20%;
+    background-position: center bottom 30%;
     position: relative;
   }
 }
