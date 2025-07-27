@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../public/fonts/JetBrainsMono/JetBrainsMono-Bold.ttf");
+  font-weight: 700;
+}
+
+:root {
+  --color-neutral-min: white;
+  --color-neutral-950: #08070b;
+  --color-neutral-900: #14131b;
+  --color-neutral-850: #18171f;
+  --color-neutral-800: #24232c;
+  --color-neutral-700: #54535b;
+  --color-neutral-600: #817d92;
+  --color-neutral-200: #e6e5ea;
+  --color-neutral-max: black;
+
+  --color-green-200: #a3ffae;
+  --color-green-300: #a4ffaf;
+  --color-yellow-300: #f8cd65;
+  --color-orange-400: #fb7c58;
+  --color-red-500: #f64a4a;
+
+  --bg-gradient: linear-gradient(to right, #14131b, #08070b);
+}
+
+body {
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: "JetBrains Mono";
+  font-size: clamp(1rem, 0.88rem + 0.51vw, 1.125rem);
+  background-color: var(--color-neutral-800);
+  color: var(--color-neutral-200);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font: inherit;
+}
+
+body {
+  background: var(--bg-gradient);
+}
+
+.page {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1rem minmax(calc(100% - 2rem), 1fr) 1rem;
+
+  > * {
+    grid-column: 2 / 3;
+  }
+
+  padding-top: clamp(4.0625rem, 0.007rem + 17.3vw, 8.3125rem);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  height: 100%;
+}
+
+.surface {
+  background-color: var(--color-neutral-800);
+}
